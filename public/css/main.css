@@ -1,0 +1,70 @@
+/* Define o estilo inicial da fonte e seta o tamanho para um valor
+ * entre 11px e 16px, variando linearmente com o tamanho da tela
+ * Os valores de min-width e max-width foram calculados de modo
+ * que o tamanho da fonte seja uma função contínua */
+body {
+    font-size: 1.4vw;
+    font-family: "Verdana";
+    color: #7F7F7F;
+}
+
+@media screen and (min-width: 1143px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    body {
+        font-size: 11px;
+    }
+}
+
+/* Linha do "meio" (entre header e footer) contendo os links */
+.row {
+    margin-top: 23vh;
+    margin-bottom: 20vh;
+    width: 97vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Colunas que contém as referências aos sistemas */
+.column {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 22.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Logos dos sistemas */
+.column img {
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botões de redirecionamento */
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #404040;
+    border: none;
+    width: 10em;
+    height: 2.5em;
+    line-height: 2.5em;
+    border-radius: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #595959;
+    text-decoration: underline;
+}
